@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_regular">
+
+        <TextView
+            android:id="@+id/text_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_regular"
+            android:text="@string/intro_text"
+            android:textSize="@dimen/text_heading" />
+
+        <TextView
+            android:id="@+id/choose_dessert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_intro"
+            android:padding="@dimen/padding_regular"
+            android:text="@string/choose_a_dessert" />
+
+        <ImageView
+            android:id="@+id/donut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/choose_dessert"
+            android:contentDescription="@string/donuts"
+            android:padding="@dimen/padding_regular"
+            android:src="@drawable/donut_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choose_dessert"
+            android:layout_toEndOf="@id/donut"
+            android:padding="@dimen/padding_wide"
+            android:text="@string/donuts" />
+
+        <ImageView
+            android:id="@+id/ice_cream"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/donut"
+            android:contentDescription="@string/ice_cream_sandwiches"
+            android:padding="@dimen/padding_regular"
+            android:src="@drawable/icecream_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/donut"
+            android:layout_toEndOf="@id/ice_cream"
+            android:padding="@dimen/padding_wide"
+            android:text="@string/ice_cream_sandwiches" />
+
+        <ImageView
+            android:id="@+id/froyo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/ice_cream"
+            android:contentDescription="@string/froyo"
+            android:padding="@dimen/padding_regular"
+            android:src="@drawable/froyo_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ice_cream"
+            android:layout_toEndOf="@id/froyo"
+            android:padding="@dimen/padding_wide"
+            android:text="@string/froyo" />
+
+    </RelativeLayout>
+</ScrollView>
